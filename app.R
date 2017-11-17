@@ -48,6 +48,9 @@ if(!require("shinythemes")) install.packages("shinythemes")
 ui <- fluidPage(
   theme = shinytheme(theme = "sandstone"), 
 	titlePanel("mtcars Shiny Tutorial"),
+  #Github link
+  tags$a(href = "https://github.com/meiradania/shinyApp", 
+		   "Click here to see the R source code", target = "_blank"),
 	tabsetPanel(
 		tabPanel("Scatter Plots",
 				sidebarLayout(
